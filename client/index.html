@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports ChatApp</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <form action="chatRoom.html" method="get">
+        <div class="connect-to-room">
+            <h1>Welcome to the Sports ChatApp</h1>
+            <div class="user-input">
+                <div class="set-username">
+                    <label for="username">Username</label><br>
+                    <input name="user" id="username" type="text" placeholder="Enter a username" required autocomplete="off" maxlength="10"/> 
+                </div>
+                <div class="select-room">
+                    <label for="room">Room</label><br>
+                    <select name="room">
+                        <option value="Basketball">Basketball</option>
+                        <option value="Football">Football</option>
+                        <option value="Soccer">Soccer</option>
+                        <option value="Hockey">Hockey</option>
+                        <option value="Baseball">Baseball</option>
+                    </select>
+                </div>
+                <input class="join-room" type="submit" value="Join Room">
+            </div>
+        </div>
+    </form>
+    
+    
+</body>
+</html>

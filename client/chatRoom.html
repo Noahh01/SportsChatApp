@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports ChatApp Room</title>
+    <script src="https://kit.fontawesome.com/cddf843ec3.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="room">
+        <div class="room-banner">
+            <h1>Sports ChatApp</h1>
+            <button><a href="index.html">Leave Room</a></button>
+        </div>
+        <div class="room-content">
+            <div class="chat-box">
+            </div>
+            <div class="room-detials">
+               <h3><i class="fas fa-comments"></i> Room Name:</h3>
+               <h4 id="room-name"></h4> 
+               <h3><i class="fas fa-users"></i> Users:</h3>
+               <ul id="list-of-users">
+               </ul>
+            </div>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="user-message" placeholder="Enter a message" required autocomplete="off">
+            <button type="submit" class="send-button" form="chat-form"><i class="fa-solid fa-paper-plane"></i> Send</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
